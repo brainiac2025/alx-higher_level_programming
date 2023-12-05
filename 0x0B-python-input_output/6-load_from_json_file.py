@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-"""load from json"""
+"""load python from json file string"""
 import json
 
 
 def load_from_json_file(filename):
-    """load from json to file"""
-    with open(filename, encoding="utf-8") as file_loaded:
-        return json.load(file+loaded)
+    """load py data structure from file string
+
+    Args:
+        filename: the file name
+
+    Returns:
+        the python data structure
+    """
+    with open(filename, 'r') as myfile:
+        return (json.load(myfile))
